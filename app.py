@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 
-address = "8Av1kqDTTB4gryMpzjKeFJS9Wa6u5iEJBAV1UtK59oGu2Eyk22PM4bdFYyYYQmByQoVyq7wTdAKqj6W9YGXeV4TnHbBhbZH"
+address = os.getenv("KEY")
 
 st.header('My Streamlit App')
 input_text = st.text_input('Enter CMD')
